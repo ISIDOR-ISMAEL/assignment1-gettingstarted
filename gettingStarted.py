@@ -3,7 +3,7 @@ import hashlib
 def welcome_assignment_answers(question):
     match question.lower():  # Convert input to lowercase for case-insensitive matching
         case "in slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a ta?":
-            answer = "XXXXXXXXXXXXXXXX"
+            answer = "pcap"
         case "are encoding and encryption the same? - yes/no":
             answer = "No"
         case "is it possible to decrypt a message without a key? - yes/no":
