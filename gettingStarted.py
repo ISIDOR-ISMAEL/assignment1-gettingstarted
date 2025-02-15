@@ -1,29 +1,33 @@
 import hashlib
 
+
 def welcome_assignment_answers(question):
-    match question.lower():  # Convert input to lowercase for case-insensitive matching
-        case "in slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a ta?":
-            answer = "pcap"
-        case "are encoding and encryption the same? - yes/no":
-            answer = "No"
-        case "is it possible to decrypt a message without a key? - yes/no":
-            answer = "No"
-        case "is it possible to decode a message without a key? - yes/no":
-            answer = "Yes"
-        case "is a hashed message supposed to be un-hashed? - yes/no":
-            answer = "No"
-        case "what is the sha256 hashing value of your nyu email and use the answer in your code - ":
-            nyu_email = input("Enter your NYU email: ")
-            answer = hashlib.sha256(nyu_email.encode()).hexdigest()
-        case "is md5 a secured hashing algorithm? - yes/no":
-            answer = "No"
-        case "what layer of the tcp/ip model does the protocol dns belong to? - the answer should be an integer number":
-            answer = 5
-        case "what layer of the tcp/ip model does the protocol icmp belong to? - the answer should be an integer number":
-            answer = 3
-        case _:  # Default case
-            answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
+    question = question.lower()
+    if question == "in slack, what is the secret passphrase posted in the #lab-python-getting-started channel posted by a ta?":
+        answer = "pcap"
+    elif question == "are encoding and encryption the same? - yes/no":
+        answer = "No"
+    elif question == "is it possible to decrypt a message without a key? - yes/no":
+        answer = "No"
+    elif question == "is it possible to decode a message without a key? - yes/no":
+        answer = "Yes"
+    elif question == "is a hashed message supposed to be un-hashed? - yes/no":
+        answer = "No"
+    elif question == "what is the sha256 hashing value of your nyu email and use the answer in your code - ":
+        nyu_email = input("Enter your NYU email: ")
+        answer = hashlib.sha256(nyu_email.encode()).hexdigest()
+    elif question == "is md5 a secured hashing algorithm? - yes/no":
+        answer = "No"
+    elif question == "what layer of the tcp/ip model does the protocol dns belong to? - the answer should be an integer number":
+        answer = 5
+    elif question == "what layer of the tcp/ip model does the protocol icmp belong to? - the answer should be an integer number":
+        answer = 3
+    else:  # Default case
+        answer = "This is not my beautiful wife! This is not my beautiful car! How did I get here?"
+
     return answer
+
+
 # Complete all the questions.
 
 
