@@ -14,7 +14,7 @@ def welcome_assignment_answers(question):
     elif question == "is a hashed message supposed to be un-hashed? - yes/no":
         answer = "No"
     elif question == "what is the sha256 hashing value of your nyu email and use the answer in your code - ":
-        nyu_email = input("Enter your NYU email: ")
+        nyu_email = input("it2284@nyu.edu")
         answer = hashlib.sha256(nyu_email.encode()).hexdigest()
     elif question == "is md5 a secured hashing algorithm? - yes/no":
         answer = "No"
